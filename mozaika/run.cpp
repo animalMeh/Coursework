@@ -28,7 +28,7 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR szC
 	wndclass.hCursor = LoadCursor(hInstance, MAKEINTRESOURCE(IDC_CURSOR1) );// 
 	wndclass.hbrBackground = (HBRUSH)GetStockObject( WHITE_BRUSH );//фон 
 	wndclass.lpszMenuName = MAKEINTRESOURCE( IDR_MENU1 );//меню имя 
-	wndclass.lpszClassName = szAppName;
+	wndclass.lpszClassName = szAppName;//hard!!!
 	wndclass.hIconSm = LoadIcon( hInstance, MAKEINTRESOURCE( IDI_ICON1 ) );// иконка 
 
 	RegisterClassEx( &wndclass );
